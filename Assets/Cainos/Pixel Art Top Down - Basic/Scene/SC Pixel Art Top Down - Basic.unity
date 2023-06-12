@@ -65847,6 +65847,7 @@ MonoBehaviour:
   moveSpeed: 3
   rb: {fileID: 1565298277}
   animator: {fileID: 1565298278}
+  lastMortionVector: {x: 0, y: 0}
   codePanel: {fileID: 520870358}
   closedSafe: {fileID: 727199477}
   openedSafe: {fileID: 1642908226}
@@ -67517,6 +67518,7 @@ MonoBehaviour:
   moveSpeed: 3
   rb: {fileID: 1615166259}
   animator: {fileID: 1615166257}
+  lastMortionVector: {x: 0, y: 0}
   codePanel: {fileID: 520870358}
   closedSafe: {fileID: 727199477}
   openedSafe: {fileID: 1642908226}
