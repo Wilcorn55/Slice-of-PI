@@ -10,16 +10,15 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public Animator animator;
     Vector2 movement;
-    public Vector2 lastMortionVector;
 
     [SerializeField]
+
     GameObject codePanel, closedSafe, openedSafe;
 
     public static bool isSafeOpened = false;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
         codePanel.SetActive(false);
         closedSafe.SetActive(true);
         openedSafe.SetActive(false);
@@ -29,16 +28,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        //Input
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        movement = new Vector2(
-            horizontal,
-            vertical
-            );
-
-        animator.SetFloat("Horizontal", horizontal);
-        animator.SetFloat("Vertical", vertical);
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
         if (isSafeOpened) {
@@ -48,16 +43,6 @@ public class PlayerMovement : MonoBehaviour
             openedSafe.SetActive(true);
 
         }
-
-        if (horizontal != 0 || vertical != 0) 
-        {
-            lastMortionVector = new Vector2(
-                horizontal,
-                vertical
-                ).normalized;
-        }
-
-
     }
 
     void FixedUpdate()
@@ -71,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.name.Equals ("Safe") && !isSafeOpened)
         {
             codePanel.SetActive(true);
-            Debug.Log("Working enter");
         }
     }
 
@@ -80,11 +64,6 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.name.Equals("Safe"))
         {
             codePanel.SetActive(false);
-            Debug.Log("Working exit");
         }
-
-
     }
-
-
 }
