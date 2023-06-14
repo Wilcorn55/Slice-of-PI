@@ -11,18 +11,19 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     public Vector2 lastMortionVector;
+    public bool moving;
 
-    [SerializeField]
-    GameObject codePanel, closedSafe, openedSafe;
+    /*[SerializeField]
+    GameObject codePanel, closedSafe, openedSafe;*/
 
     public static bool isSafeOpened = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        codePanel.SetActive(false);
+        /*codePanel.SetActive(false);
         closedSafe.SetActive(true);
-        openedSafe.SetActive(false);
+        openedSafe.SetActive(false);*/
     }
 
 
@@ -37,17 +38,18 @@ public class PlayerMovement : MonoBehaviour
             vertical
             );
 
+
         animator.SetFloat("Horizontal", horizontal);
         animator.SetFloat("Vertical", vertical);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        if (isSafeOpened) {
+        /*if (isSafeOpened) {
 
             codePanel.SetActive(false);
             closedSafe.SetActive(false);
             openedSafe.SetActive(true);
 
-        }
+        }*/
 
         if (horizontal != 0 || vertical != 0) 
         {
@@ -66,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime) ;
     }
 
+    /*
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.name.Equals ("Safe") && !isSafeOpened)
@@ -73,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
             codePanel.SetActive(true);
             Debug.Log("Working enter");
         }
+    }
     }
 
     void OnTriggerExit2D(Collider2D col)
@@ -85,6 +89,6 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-
+    */
 
 }
