@@ -9,7 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/MainMenu.unity
     guid: de8e8a3218d45ab43bb89927e0217ad2
   - enabled: 1
-    path: Assets/Cainos/Pixel Art Top Down - Basic/Scene/SC Pixel Art Top Down -
-      Basic.unity
+    path: Assets/Scenes/Cases/Case1.unity
     guid: 86e89bd9e4a9c5245a015cf17e3c0aae
   m_configObjects: {}
