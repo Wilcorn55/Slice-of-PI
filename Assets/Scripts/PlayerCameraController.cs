@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerCameraController : MonoBehaviour
 {
+	//Variables
 	public Transform target;
 	public Vector3 offset;
 	public static PlayerCameraController mainCam;
@@ -14,7 +15,8 @@ public class PlayerCameraController : MonoBehaviour
 		mainCam = this;
 	}
 
-	// Update is called once per frame
+	//LateUpdate is called once per frame
+	//LateUpdate will move the camera position to the players position 
 	void LateUpdate()
 	{
 		transform.position = target.position + offset;

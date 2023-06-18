@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
+    //Variables
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
-    // Update is called once per frame
+    //Update is called once per frame
+    //Update will check if the play triggers the pause menu with the esc button and will display the menu if the player has pressed esc
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -23,6 +25,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    //Resume will stop the pause menu displaying and will continue the game
     void Resume()
     {
         pauseMenuUI.SetActive(false);
@@ -30,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
+    //Pause will cause the game to pause and bring up the pause menu 
     void Pause()
     {
         pauseMenuUI.SetActive(true);

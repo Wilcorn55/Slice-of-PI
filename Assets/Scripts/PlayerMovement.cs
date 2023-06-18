@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static bool isSafeOpened = false;
 
+    //Start is called before the first frame update
+    //Start will get the rigidbody of the player
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    //Update is called once per frame
+    //Update will continuously update the players movement
     void Update()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");

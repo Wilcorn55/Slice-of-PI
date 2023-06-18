@@ -8,6 +8,7 @@ using System;
 
 public class Player
 {
+    //Player Variables
     public GameObject prefab;
     public string name;
     public Sprite icon;

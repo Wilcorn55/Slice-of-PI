@@ -10,6 +10,8 @@ public class CharacterSelectionUI : MonoBehaviour
     public Transform prevPlayer;
     public Transform selectedPlayer;
 
+    //Start is called before the first frame update
+    //Start will display the character options 
     private void Start()
     {
         foreach(Player p in GameManager.instance.players)
@@ -33,6 +35,8 @@ public class CharacterSelectionUI : MonoBehaviour
         }
     }
 
+    //Update is called once per frame
+    //Update will increase the size of the image that the player selects and will decrease it to normal size if the player selects the other option
     private void Update()
     {
         if(selectedPlayer != null)
