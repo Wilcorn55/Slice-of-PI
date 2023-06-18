@@ -10,6 +10,8 @@ public class GuessController : MonoBehaviour
 {
     private string Murderer;
     private string guessMurderer;
+    public GameObject winMenuUI;
+    public GameObject loseMenuUI;
 
 
     [SerializeField]
@@ -25,7 +27,6 @@ public class GuessController : MonoBehaviour
     private void Awake()
     {
         int sceneName = currentScene.buildIndex;
-        Debug.Log(sceneName);
         if (sceneName == -1)  { Murderer = "sally"; }
         else if (sceneName == 3) { Murderer = "jonothan"; }
         text.text = "Who do you think did it?";
@@ -43,11 +44,13 @@ public class GuessController : MonoBehaviour
     {
         if (tempguess == Murderer) 
         {
-            text.text = "You Guessed Right it was " + Murderer;
+            winMenuUI.SetActive(true);
+
+
         }
         else if (tempguess != Murderer) 
         {
-            text.text = "Your Guess was incorrect please try again";
+            loseMenuUI.SetActive(true);
         }
     }
 }
