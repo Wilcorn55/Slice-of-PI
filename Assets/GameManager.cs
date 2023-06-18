@@ -36,4 +36,7 @@ public class GameManager : MonoBehaviour
     {
         currentPlayer = players;
     }
+    public DialogueSystem dialogueSystem; 
+
+    
 }

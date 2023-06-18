@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Aaron Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Ah Welcome Detective thank you for coming
+  - jsdfstj sjfdyjdfrsj
+  - '  styjfsj stjsfgj rtfsjfgjsrtj sytjhjfth sgjdtjfsghjstd tshj tsj j sthjsjj stgjdfrtjs
+    jstrj '
+  actor: {fileID: 11400000, guid: 6975b59674e1f7a489c50b29458025a1, type: 2}
