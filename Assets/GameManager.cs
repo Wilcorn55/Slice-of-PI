@@ -13,4 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public ItemContainer inventorycontainer;
     public DialogueSystem dialogueSystem; 
+
+    
 }
