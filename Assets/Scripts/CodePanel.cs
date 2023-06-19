@@ -6,14 +6,13 @@ using TMPro;
 
 public class CodePanel : MonoBehaviour
 {
-
+    //Variables
     [SerializeField]
     TextMeshProUGUI codeText;
     string codeTextValue = "";
 
-
-
     // Update is called once per frame
+    //Update will check if the player input the correct code
     void Update()
     {
         codeText.text = codeTextValue;

@@ -6,17 +6,19 @@ using UnityEngine;
 [Serializable]
 public class ItemSlot 
 {
+    //Variables
     public Item item;
     public int count;
 }
 
 
-
 [CreateAssetMenu(menuName ="Data/Item Container")]
 public class ItemContainer : ScriptableObject
 {
+    //Variables
     public List<ItemSlot> Slots;
 
+    //Add will add items to the players inventory 
     public void Add(Item item, int count = 1) 
     {
         if(item.stackable == true) 

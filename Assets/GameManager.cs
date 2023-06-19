@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    //Variables
     public static GameManager instance;
     public DialogueSystem dialogueSystem;
     public ItemContainer inventorycontainer;
+    public GameObject player;
+    public Player[] players;
+    public Player currentPlayer;
+
+    //Awake will initialize the player in the scene
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
-
         } else
         {
             Destroy(gameObject);
         }
-
         dialogueSystem = DialogueSystemManager.instance.dialogueSystem;
     }
 
-    public GameObject player;
-   
-
-    public Player[] players;
-    public Player currentPlayer;
-
+    //Start will add the current player to the array 
     private void Start()
     {
         if(players.Length > 0)
@@ -37,11 +35,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    //Set player will set currently selected player
     public void SetPlayer(Player players)
     {
         currentPlayer = players;
     }
    
-
-    
 }

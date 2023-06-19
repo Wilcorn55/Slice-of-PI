@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CharacterInteractController : MonoBehaviour
 {
+    //Variables
     PlayerMovement PlayerMovement;
     Rigidbody2D rgbd2d;
     [SerializeField] float offsetDistance = 1f;
     [SerializeField] float sizeOfInteractableArea = 1.2f;
     Character character;
 
+    //Awake will get the players position
     private void Awake()
     {
         PlayerMovement = GetComponent<PlayerMovement>();
@@ -17,16 +19,16 @@ public class CharacterInteractController : MonoBehaviour
         character = GetComponent<Character>();
     }
 
+    //Update will check if the player pressed the trigger button
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1)) 
+        if (Input.GetMouseButtonDown(1))
         {
             Interact();
         }
-
-       
     }
 
+    //Interact will 
     private void Interact() 
     {
         Vector2 position = rgbd2d.position + PlayerMovement.lastMortionVector * offsetDistance;

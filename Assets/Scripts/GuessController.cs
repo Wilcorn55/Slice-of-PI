@@ -8,6 +8,7 @@ using TMPro;
 
 public class GuessController : MonoBehaviour
 {
+    //Variables
     private string Murderer;
     private string guessMurderer;
     public GameObject winMenuUI;
@@ -20,8 +21,7 @@ public class GuessController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
 
-    
-
+    //Awake will initialize the scene
     private void Awake()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -31,6 +31,7 @@ public class GuessController : MonoBehaviour
         text.text = "Who do you think did it?";
     }
 
+    //Get input will get the input of the player and will make the answer lowercase
     public void GetInput(string guess) 
     {
         string tempguess = guess.ToLower();
@@ -38,7 +39,8 @@ public class GuessController : MonoBehaviour
         Debug.Log("You Entered " + tempguess);
         input.text = "";
     }
-
+    
+    //Compare guesses will compare the players input with the "Murderer" name and will display the corresponding UI
     void CompareGuesses(string tempguess) 
     {
         if (tempguess == Murderer) 

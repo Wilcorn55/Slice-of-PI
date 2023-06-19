@@ -7,11 +7,13 @@ using TMPro;
 
 public class Guess_InputWindow : MonoBehaviour
 {
+    //Variables
     private Button guessBtn;
     private Button cancelBtn;
     private TextMeshProUGUI titleText;
     private TMP_InputField inputField;
 
+    //Awake contains the guess input window buttons 
     private void Awake()
     {
         Hide();
@@ -22,11 +24,13 @@ public class Guess_InputWindow : MonoBehaviour
 
     }
 
+    //Show will show the guess input window
     public void Show() 
     {
         gameObject.SetActive(true);
     }
 
+    //Hide will hide the guess input window 
     public void Hide() 
     {
         gameObject.SetActive(false);

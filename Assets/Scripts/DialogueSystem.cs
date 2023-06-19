@@ -7,7 +7,7 @@ using System;
 
 public class DialogueSystem : MonoBehaviour
 {
-
+    //Variables
     [SerializeField] TextMeshProUGUI targetText;
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Image portrait;
@@ -21,8 +21,7 @@ public class DialogueSystem : MonoBehaviour
     float totalTimeToType, currentTime;
     string lineToShow;
 
-
-
+    //Update will get the players input and will with display text 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -32,6 +31,7 @@ public class DialogueSystem : MonoBehaviour
         TypeOutText();
     }
     
+    //Type out text will 
     private void TypeOutText()
     {
         if (visibleTextPercent >= 1f) { return; }
@@ -41,12 +41,14 @@ public class DialogueSystem : MonoBehaviour
         UpdateText();
     }
 
+    //Update text will update the displayed text
     void UpdateText() 
     {
         int letterCount = (int)(lineToShow.Length * visibleTextPercent);
         targetText.text = lineToShow.Substring(0, letterCount);
     }
 
+    //Push Text will 
     private void PushText()
     {
         if(visibleTextPercent < 1f) 
@@ -66,6 +68,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
+    //Cycle line will display the text in a specific way
     void CycleLine()
     {
 
@@ -80,6 +83,7 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
+    //Initialize will display the dialog box
     public void Initialize(DialogueContainer dialogueContainer)
     {
         Show(true);
@@ -90,6 +94,7 @@ public class DialogueSystem : MonoBehaviour
 
     }
 
+    //Update portrait will display the name and sprite of the npc the player is talking to 
     private void UpdatePortrait()
     {
         portrait.sprite = currentDialogue.actor.portrait;
@@ -101,6 +106,7 @@ public class DialogueSystem : MonoBehaviour
         gameObject.SetActive(v);
     }
 
+    //Conclude will finish the text
     private void Conclude()
     {
         Debug.Log("The Dialogue has ended");

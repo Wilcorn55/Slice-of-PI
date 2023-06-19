@@ -6,17 +6,19 @@ using TMPro;
 
 public class InventoryButton : MonoBehaviour
 {
+    //Variables
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
 
-
     int myIndex;
 
+    //Set index will set the index
     public void SetIndex(int index) 
     {
         myIndex = index;
     }
 
+    //Set will display the sprite and amount in the inventory 
     public void Set(ItemSlot slot)
     {
         icon.gameObject.SetActive(true);
@@ -33,6 +35,7 @@ public class InventoryButton : MonoBehaviour
         }
     }
 
+    //Clean will display an empty inventory 
     public void Clean() 
     {
         icon.sprite = null;

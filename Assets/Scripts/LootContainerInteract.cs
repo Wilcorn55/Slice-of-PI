@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class LootContainerInteract : Interactable
 {
+    //Variables
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
     [SerializeField] bool opened;
 
+    //Interact 
     public override void Interact(Character character)
     {
         if (opened == false) 

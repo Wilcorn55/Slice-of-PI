@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CharacterSelectionUI : MonoBehaviour
 {
+    //Variables
     public GameObject playerPrefab;
 
     public Transform prevPlayer;

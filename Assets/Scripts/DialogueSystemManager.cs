@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueCanvasMaker : MonoBehaviour
+public class DialogueSystemManager : MonoBehaviour
 {
-    public static DialogueCanvasMaker instance;
-    
+    //Variables
+    public static DialogueSystemManager instance;
+    public DialogueSystem dialogueSystem;
 
+    //Awake will initialize the dialogue system
     private void Awake()
     {
         if (instance == null)
