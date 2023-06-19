@@ -22,6 +22,7 @@ public class DialogueSystem : MonoBehaviour
     string lineToShow;
 
 
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))

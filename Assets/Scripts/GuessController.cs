@@ -20,12 +20,11 @@ public class GuessController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI text;
 
-    Scene currentScene = SceneManager.GetActiveScene();
-
-   
+    
 
     private void Awake()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
         int sceneName = currentScene.buildIndex;
         if (sceneName == -1)  { Murderer = "sally"; }
         else if (sceneName == 3) { Murderer = "jonothan"; }

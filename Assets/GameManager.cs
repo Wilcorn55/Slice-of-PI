@@ -5,21 +5,26 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public DialogueSystem dialogueSystem;
+    public ItemContainer inventorycontainer;
     private void Awake()
     {
         if(instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
+
+
         } else
         {
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        dialogueSystem = DialogueSystemManager.instance.dialogueSystem;
     }
 
     public GameObject player;
-    public ItemContainer inventorycontainer;
+   
 
     public Player[] players;
     public Player currentPlayer;
@@ -36,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         currentPlayer = players;
     }
-    public DialogueSystem dialogueSystem; 
+   
 
     
 }
