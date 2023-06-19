@@ -26,8 +26,9 @@ public class GuessController : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         int sceneName = currentScene.buildIndex;
-        if (sceneName == -1)  { Murderer = "sally"; }
-        else if (sceneName == 3) { Murderer = "jonothan"; }
+        if (sceneName == 1)  { Murderer = "sally"; }
+        else if (sceneName == 2) { Murderer = "jonothan"; }
+        else { Murderer = "Blake"; }
         text.text = "Who do you think did it?";
     }
 
