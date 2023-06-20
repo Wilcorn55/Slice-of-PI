@@ -24,6 +24,7 @@ public class GuessController : MonoBehaviour
     //Awake will initialize the scene
     private void Awake()
     {
+        //gives us the build index of the scene and sets the murders name
         Scene currentScene = SceneManager.GetActiveScene();
         int sceneName = currentScene.buildIndex;
         if (sceneName == 1)  { Murderer = "sally"; }

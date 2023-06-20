@@ -28,7 +28,7 @@ public class CharacterInteractController : MonoBehaviour
         }
     }
 
-    //Interact will 
+    //Interact will check if there is anything around the player that they can interact with
     private void Interact() 
     {
         Vector2 position = rgbd2d.position + PlayerMovement.lastMortionVector * offsetDistance;

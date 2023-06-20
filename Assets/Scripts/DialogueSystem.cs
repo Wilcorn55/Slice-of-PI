@@ -21,7 +21,7 @@ public class DialogueSystem : MonoBehaviour
     float totalTimeToType, currentTime;
     string lineToShow;
 
-    //Update will get the players input and will with display text 
+    //Update will get the players input and will display text 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,7 +31,7 @@ public class DialogueSystem : MonoBehaviour
         TypeOutText();
     }
     
-    //Type out text will 
+    //Type out text slowly types the text rather then doing it all at once
     private void TypeOutText()
     {
         if (visibleTextPercent >= 1f) { return; }
@@ -48,7 +48,7 @@ public class DialogueSystem : MonoBehaviour
         targetText.text = lineToShow.Substring(0, letterCount);
     }
 
-    //Push Text will 
+    //Push Text will make it that if the player wants to skip the typing out they can
     private void PushText()
     {
         if(visibleTextPercent < 1f) 
@@ -68,7 +68,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    //Cycle line will display the text in a specific way
+    //Cycle line resets the line
     void CycleLine()
     {
 
@@ -106,7 +106,7 @@ public class DialogueSystem : MonoBehaviour
         gameObject.SetActive(v);
     }
 
-    //Conclude will finish the text
+    //Conclude will finish the text and turn off the dialogue box
     private void Conclude()
     {
         Debug.Log("The Dialogue has ended");
