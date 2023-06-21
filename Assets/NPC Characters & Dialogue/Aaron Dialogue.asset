@@ -13,8 +13,14 @@ MonoBehaviour:
   m_Name: Aaron Dialogue
   m_EditorClassIdentifier: 
   line:
-  - Ah Welcome Detective thank you for coming
-  - jsdfstj sjfdyjdfrsj
-  - '  styjfsj stjsfgj rtfsjfgjsrtj sytjhjfth sgjdtjfsghjstd tshj tsj j sthjsjj stgjdfrtjs
-    jstrj '
+  - Welcome Detective, thank you for coming. Welcome to our small town of Elmwood
+  - I am Mayor Aaron
+  - The reason we have called you here is that there has been a murder
+  - 'The local baker Peter was found stabbed in the middle of his Bakery two mornings
+    ago '
+  - Our town is so small so we don't have any police of our own which is why we asked
+    you to come here.
+  - You know in small towns everyone knows everyone else's business.
+  - So I think the best way for you to find out what happened is to walk around and
+    talk to the villagers.
   actor: {fileID: 11400000, guid: 6975b59674e1f7a489c50b29458025a1, type: 2}

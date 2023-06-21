@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        dialogueSystem = DialogueSystemManager.instance.dialogueSystem;
+        
     }
 
     //Start will add the current player to the array 
