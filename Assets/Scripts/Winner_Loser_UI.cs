@@ -28,8 +28,8 @@ public class Winner_Loser_UI : MonoBehaviour
         }
         }
 
-        //Main menu will load the main menu
-        public void MainMenu()
+    //Main menu will load the main menu
+    public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }

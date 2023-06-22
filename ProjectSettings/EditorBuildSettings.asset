@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cases/Case1.unity
     guid: 86e89bd9e4a9c5245a015cf17e3c0aae
+  - enabled: 1
+    path: Assets/Scenes/Cases/Case2.unity
+    guid: 0a2779ac25914d0489d49a3a0c2d81f8
   m_configObjects: {}
