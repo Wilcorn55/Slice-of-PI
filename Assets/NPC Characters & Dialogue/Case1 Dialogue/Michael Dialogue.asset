@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Michael Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Hey how you doing, name Michael
+  - You looking into Peter's Murder, well interestingly enough i own the only restaurant
+    in town.
+  - On a couple of different occasions Peter came into the restaurant with someone
+    who definitely wasn't his wife.
+  - 'I believe her name is Sally. '
+  - The last time they came in would have been about a week before the murder.
+  - See Ya.
+  actor: {fileID: 11400000, guid: 50a5d3d296d30364bbc5922c172a9295, type: 2}

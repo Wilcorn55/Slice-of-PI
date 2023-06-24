@@ -7,7 +7,7 @@ public class PauseMenu : MonoBehaviour
     //Variables
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public PlayerMovement movement;
+    //public PlayerMovement movement;
 
     //Update is called once per frame
     //Update will check if the play triggers the pause menu with the esc button and will display the menu if the player has pressed esc
@@ -32,7 +32,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        movement.enabled = true;
+        //movement.enabled = true;
     }
 
     //Pause will cause the game to pause and bring up the pause menu 
@@ -41,6 +41,6 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        movement.enabled = false;
+        //movement.enabled = false;
     }
 }

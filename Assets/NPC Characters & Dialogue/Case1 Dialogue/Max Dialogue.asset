@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Max Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - You must be the Detective the Mayors been talking about, Im Max and do i have
+    some information for you.
+  - 'Now you see, every morning I like to go for a walk around the town and I pass
+    the bakery. '
+  - The morning of the Murder i passed the Bakery and I heard some arguing from inside.
+  - I didn't think much of it but what i did hear was a man and a woman arguing.
+  - "The man said \u201CI have a good life and my wife is your best friend, I'm sorry
+    i can't be with you\u201D"
+  - "And the woman replied with \u201CWe can just go Jonothan and Charlotte will
+    get over it\u201D"
+  - 'But that''s all I heard. '
+  - Have a good day.
+  actor: {fileID: 11400000, guid: 14467d76d9f4be749a7d99b0ae710404, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Jonothan Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Hiya you must be the Detective, Hi i'm Jonathan.
+  - My wife Sally, is best friends with Peter's wife.
+  - I kinda knew him, we got along but we weren't great friends.
+  - Try talking to Sally. She may know more than I do.
+  actor: {fileID: 11400000, guid: a30156e377333224dac76ce3952e479d, type: 2}

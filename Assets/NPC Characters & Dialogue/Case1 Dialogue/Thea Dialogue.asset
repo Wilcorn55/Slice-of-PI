@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Thea Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - How are you doing? I'm Thea.
+  - Terrible situation isn't it.
+  - I'm gonna be honest with you. I think Peter was cheating on Charlotte.
+  - You see I'm rather good friends with Charlotte and when I've been round at her
+    house I noticed that he's become rather protective of his phone.
+  - ' I don''t think that Charlotte has suspected anything and I hope it''s not true.
+    But it''s just a gut feeling I have.'
+  actor: {fileID: 11400000, guid: c88f6edafe2995c40913fbd7f660e572, type: 2}

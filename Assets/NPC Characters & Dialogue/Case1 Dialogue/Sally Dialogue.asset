@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Sally Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Hey how's it going you must be the detective, such a sad situation. Charlotte
+    is just heartbroken.
+  - Oh sorry I'm Sally, Charlotte and I have been best friends since we were kids.
+  - Waking up that morning to the news was just horrible. I raced over to comfort
+    Charlotte as soon as I heard.
+  - 'I can''t believe that someone in our community would be capable of that, it''s
+    so scary. '
+  - 'Please find out who did this.  '
+  - 'If i''m honest i think it might have been Darryl, i mean he has a good motive
+    with Peter out the way he gets all of the bakeries profits. '
+  - But that's just my two cents.
+  actor: {fileID: 11400000, guid: 53e010f0441857d40a0c9008891d4212, type: 2}

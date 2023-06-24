@@ -8018,15 +8018,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -10306,7 +10306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 5f705516980729f439ed04e139519f70, type: 2}
 --- !u!61 &324537052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36536,7 +36536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 08b1b48926b92da40a6f023a147c093c, type: 2}
 --- !u!61 &525434297
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40423,7 +40423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: f18320123d21bc9449932c04d0533b5b, type: 2}
 --- !u!61 &688560555
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45822,7 +45822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 41a642835232f5246b5e366b9f812a18, type: 2}
 --- !u!61 &903955483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48751,7 +48751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoseMenuUI: {fileID: 1229197465}
-  pauseMenuUI: {fileID: 0}
+  pauseMenuUI: {fileID: 1557096960}
   movement: {fileID: 0}
 --- !u!1001 &1024656589
 PrefabInstance:
@@ -49669,7 +49669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1557096960}
-  movement: {fileID: 0}
 --- !u!1 &1048837927
 GameObject:
   m_ObjectHideFlags: 0
@@ -52637,7 +52636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 542041cdbccd38742a0c154eb030e772, type: 2}
 --- !u!61 &1169434062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52958,7 +52957,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1023280772}
         m_TargetAssemblyTypeName: Winner_Loser_UI, Assembly-CSharp
-        m_MethodName: Resume
+        m_MethodName: KeepPlaying
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -65530,7 +65529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 8b5174da03c843d46857a77916372eae, type: 2}
 --- !u!61 &1360809622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78476,7 +78475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 95d021d9e75b77548a68667a983a13fa, type: 2}
 --- !u!61 &1851918022
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -20,10 +20,12 @@ public class Winner_Loser_UI : MonoBehaviour
         int sceneName = currentScene.buildIndex;
         if (sceneName == 1)
         {
+            Resume();
             SceneManager.LoadScene("Case2");
         }
         else if (sceneName == 2) 
         {
+            Resume();
             SceneManager.LoadScene("MainMenu");
         }
         }
@@ -34,10 +36,11 @@ public class Winner_Loser_UI : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    //Resume will continue the game
-    public void KeepPkaying() 
+    //Keep Playing will continue the game
+    public void KeepPlaying() 
     {
         LoseMenuUI.SetActive(false);
+        Resume();
     }
 
     //Resume will stop the pause menu displaying and will continue the game
@@ -49,14 +52,7 @@ public class Winner_Loser_UI : MonoBehaviour
         movement.enabled = true;
     }
 
-    //Pause will cause the game to pause and bring up the pause menu 
-    void Pause()
-    {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-        movement.enabled = false;
-    }
+
 }
 
     

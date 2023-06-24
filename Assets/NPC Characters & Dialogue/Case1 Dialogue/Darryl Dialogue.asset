@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Darryl Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - "Hey I\u2019m Darryl, I was good friends with Peter. "
+  - 'Him and I ran the Bakery together, he ran the day to day and did all the baking
+    and I ran the business side. '
+  - 'I don''t know what I''m gonna do now that he''s gone. '
+  - 'Um I don''t know what happened that morning he always started early in order
+    to get all the baking done. '
+  - 'When I came in at my normal time I found him dead. '
+  - 'There was nothing missing so it definitely wasn''t a robbery gone wrong or anything
+    like that. '
+  - That's all I really know, sorry I can't be of any help.
+  actor: {fileID: 11400000, guid: 1760f8d51e6ff5d40a5232042bb352cf, type: 2}
