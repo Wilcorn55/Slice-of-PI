@@ -11,7 +11,6 @@ public class Winner_Loser_UI : MonoBehaviour
     public GameObject LoseMenuUI;
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public PlayerMovement movement;
 
     //Continue will load the next scene
     public void ContinueGame()
@@ -20,13 +19,13 @@ public class Winner_Loser_UI : MonoBehaviour
         int sceneName = currentScene.buildIndex;
         if (sceneName == 1)
         {
-            Resume();
             SceneManager.LoadScene("Case2");
+            Resume();
         }
         else if (sceneName == 2) 
-        {
-            Resume();
+        {            
             SceneManager.LoadScene("MainMenu");
+            Resume();
         }
         }
 
@@ -44,12 +43,11 @@ public class Winner_Loser_UI : MonoBehaviour
     }
 
     //Resume will stop the pause menu displaying and will continue the game
-    void Resume()
+    public void Resume()
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
-        movement.enabled = true;
     }
 
 

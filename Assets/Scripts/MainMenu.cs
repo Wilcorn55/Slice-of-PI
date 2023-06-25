@@ -9,13 +9,13 @@ public class MainMenu : MonoBehaviour
     //Play game will load the next scene
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Case1");
 
     } 
 
     public void PlayGameTwo()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("Case2");
     }
 
     //Quit game will cause the game to close 
