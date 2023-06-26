@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Jonothan Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Hey Detective, Welcome back. How longs it been 2, 3 years.
+  - 'Not the best circumstances for your return '
+  - Now you remember our Mayor Aaron Right?
+  - Well a few days ago he was found strangled in his bed
+  - The lock on the back door of his house was found smashed in
+  - Now you see our local election is coming up so I think it may have been one of
+    his political rivals.
+  - The people running are Myself, Darryl, Michael and Aaron was.
+  - So probably best you do the same as last time, go round and talk to the towns
+    people.
+  - I guess your probably wanting to know about me since I'm running for Mayor
+  - 'Well since the coroner said he was killed early in the morning I would have
+    been at home working in my office '
+  - See ya!
+  actor: {fileID: 11400000, guid: a30156e377333224dac76ce3952e479d, type: 2}
