@@ -16,8 +16,14 @@ MonoBehaviour:
   - Welcome back Detective
   - Been an interesting couple of years since you were last here.
   - I've got a new baker, and I'm running for Mayor
-  - Welcome back Detective
-  - Welcome back Detective
-  - Welcome back Detective
-  - Welcome back Detective
+  - and of course our the reason your back.
+  - Well I can tell you, these days every morning I go into the bakery early to help
+    out with the prep
+  - Just ask Russel he also comes in and helps out and was there that morning.
+  - If i were you my suspicions would be on the other two.
+  - I was in last by a long shot in the polls
+  - 'I believe it went first Aaron, second Jonothan and third Michael '
+  - It was a pretty close race as well, now it seems like a bit of a coin flip between
+    the other two
+  - Anyways I wont take up any more of your time, have a good one
   actor: {fileID: 11400000, guid: 1760f8d51e6ff5d40a5232042bb352cf, type: 2}
