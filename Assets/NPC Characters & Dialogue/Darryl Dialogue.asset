@@ -10,7 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
-  m_Name: Velma Dialogue
+  m_Name: Darryl Dialogue
   m_EditorClassIdentifier: 
-  line: []
-  actor: {fileID: 0}
+  line:
+  - Welcome back Detective
+  - Been an interesting couple of years since you were last here.
+  - I've got a new baker, and I'm running for Mayor
+  - Welcome back Detective
+  - Welcome back Detective
+  - Welcome back Detective
+  - Welcome back Detective
+  actor: {fileID: 11400000, guid: 1760f8d51e6ff5d40a5232042bb352cf, type: 2}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Cory Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Hey man whats up I'm Cory.
+  - Oh your the Detective.
+  - I'm guessing you already know that I'm, well was Aarons brother
+  - And you probably know that we had been fighting recently.
+  - It was because our Father passed a couple of months ago and I was given the entirety
+    of the inheritance
+  - and Aaron was not happy about that.
+  - Over the last 2 months he has really been on me about him deserving some
+  - 'I kept telling him that it''s just what Dad wanted, '
+  - I'm not sure why Dad did what he did but he did say in the will to not give anything
+    to Aaron
+  - I was just trying to follow my Dad's final wish's
+  - I don't think there is anything else that i can help you with.
+  actor: {fileID: 11400000, guid: 2eb14b8044806144d951335d88d0d687, type: 2}

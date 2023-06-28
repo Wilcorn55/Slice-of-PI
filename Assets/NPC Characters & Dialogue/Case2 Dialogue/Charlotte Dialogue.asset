@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
+  m_Name: Charlotte Dialogue
+  m_EditorClassIdentifier: 
+  line:
+  - Welcome back Detective.
+  - Another very sad situation.
+  - Aaron was a good man and a great help when Peter was killed.
+  - 'I''m guessing you are looking into the other candidates '
+  - Although if i were you i would be looking into Cory.
+  - He's Aaron's brother and from what Aaron told me they have been figting quite
+    a bit.
+  - Mostly about the inheritance from their parents.
+  - He didn't give me all the details just that.
+  - Have a good day.
+  actor: {fileID: 11400000, guid: fb58c6d204f0c9e4a9f4afac71d09d78, type: 2}
