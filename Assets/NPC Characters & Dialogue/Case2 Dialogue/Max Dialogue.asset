@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f9d4d6a39b90e242ba8e372c306883a, type: 3}
-  m_Name: New Dialogue ContainerNew Dialogue Container
+  m_Name: Max Dialogue
   m_EditorClassIdentifier: 
-  line: []
-  actor: {fileID: 0}
+  line:
+  - 'Hiya Detective how''s it going '
+  - I heard some of my info helped you solve the last case.
+  - Well unfortunately I don't have anything to help you this time.
+  - Have a good one.
+  actor: {fileID: 11400000, guid: 14467d76d9f4be749a7d99b0ae710404, type: 2}
