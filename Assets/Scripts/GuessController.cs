@@ -29,7 +29,7 @@ public class GuessController : MonoBehaviour
         int sceneName = currentScene.buildIndex;
         if (sceneName == 1)  { Murderer = "sally"; }
         else if (sceneName == 2) { Murderer = "jonothan"; }
-        else { Murderer = "Blake"; }
+        //else { Murderer = "Blake"; }
         text.text = "Who do you think did it?";
     }
 
