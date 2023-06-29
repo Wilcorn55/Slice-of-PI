@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Slots:
   - item: {fileID: 11400000, guid: 2f3a02e5b13d5854dabd965a3e7173a2, type: 2}
-    count: 5
+    count: 0
   - item: {fileID: 11400000, guid: f01256a1b2307d24e9414368cf00b79c, type: 2}
-    count: 5
+    count: 0
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}
