@@ -10272,7 +10272,7 @@ GameObject:
   - component: {fileID: 324537053}
   - component: {fileID: 324537052}
   - component: {fileID: 324537051}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Darryl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10371,9 +10371,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300014, guid: b62a8e74a325e4493956501c30341010, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -36582,7 +36582,7 @@ GameObject:
   - component: {fileID: 525434298}
   - component: {fileID: 525434297}
   - component: {fileID: 525434296}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Michael
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36681,9 +36681,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -40469,7 +40469,7 @@ GameObject:
   - component: {fileID: 688560556}
   - component: {fileID: 688560555}
   - component: {fileID: 688560554}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Max
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40568,9 +40568,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300018, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -45868,7 +45868,7 @@ GameObject:
   - component: {fileID: 903955484}
   - component: {fileID: 903955483}
   - component: {fileID: 903955482}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Thea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45967,9 +45967,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300006, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -52908,7 +52908,7 @@ GameObject:
   - component: {fileID: 1169434063}
   - component: {fileID: 1169434062}
   - component: {fileID: 1169434061}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Sally
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52923,7 +52923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169434059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.73, y: -1.91, z: 0}
+  m_LocalPosition: {x: -16.35, y: -1.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -53007,9 +53007,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300006, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -65801,7 +65801,7 @@ GameObject:
   - component: {fileID: 1360809623}
   - component: {fileID: 1360809622}
   - component: {fileID: 1360809621}
-  m_Layer: 22
+  m_Layer: 20
   m_Name: Charlotte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65900,9 +65900,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300012, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -78748,7 +78748,7 @@ GameObject:
   - component: {fileID: 1851918023}
   - component: {fileID: 1851918022}
   - component: {fileID: 1851918021}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Jonothan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78847,9 +78847,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -105541197
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: -1869315837
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300018, guid: df894d170d5f44be293fae0ef08b055c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
