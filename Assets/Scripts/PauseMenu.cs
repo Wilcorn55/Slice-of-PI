@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -40,4 +41,18 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    //Play game will load the case 1 scene
+    public void PlayGameOne()
+    {
+        SceneManager.LoadScene("Case1");
+
+    }
+
+    //Play game two will load the case 2 scene
+    public void PlayGameTwo()
+    {
+        SceneManager.LoadScene("Case2");
+    }
+
 }
