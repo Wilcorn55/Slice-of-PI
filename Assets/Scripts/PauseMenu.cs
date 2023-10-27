@@ -42,6 +42,12 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    //Main menu will take the player to the main menu
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");   
+    }
+
     //Play game will load the case 1 scene
     public void PlayGameOne()
     {
