@@ -28,10 +28,4 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
     }
 
-
-    //Quit game will cause the game to close 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 }

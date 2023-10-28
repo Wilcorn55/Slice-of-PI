@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
+    //Pause Menu 
+
     //Update is called once per frame
     //Update will check if the play triggers the pause menu with the esc button and will display the menu if the player has pressed esc
     void Update()
@@ -42,13 +44,15 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    //Case Select tab
+
     //Main menu will take the player to the main menu
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");   
     }
 
-    //Play game will load the case 1 scene
+    //Play game one will load the case 1 scene
     public void PlayGameOne()
     {
         SceneManager.LoadScene("Case1");
@@ -59,6 +63,12 @@ public class PauseMenu : MonoBehaviour
     public void PlayGameTwo()
     {
         SceneManager.LoadScene("Case2");
+    }
+
+    //Quit game will cause the game to close 
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }
