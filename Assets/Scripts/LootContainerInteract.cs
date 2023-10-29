@@ -18,7 +18,6 @@ public class LootContainerInteract : Interactable
             closedChest.SetActive(false);
             openedChest.SetActive(true);
             
-
         }
     }
 }
