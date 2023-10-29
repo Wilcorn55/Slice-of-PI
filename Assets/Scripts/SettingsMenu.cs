@@ -10,7 +10,7 @@ public class SettingsMenu : MonoBehaviour
     //This is the music mute toggle
     public void muteToggle(bool muted)
     {
-        if (muted)
+        if (!muted)
         {
             AudioListener.volume = 0;
         }
