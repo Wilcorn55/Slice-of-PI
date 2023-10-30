@@ -7,7 +7,9 @@ public class LootContainerInteract : Interactable
     //Variables
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
+    [SerializeField] GameObject PaperPuzzle;
     [SerializeField] bool opened;
+    [SerializeField] bool HasPuzzle;
 
     //Interact will open a chest or loot container
     public override void Interact(Character character)
@@ -17,7 +19,11 @@ public class LootContainerInteract : Interactable
             opened = true;
             closedChest.SetActive(false);
             openedChest.SetActive(true);
-            
+
+            if(HasPuzzle == true)
+            {
+                PaperPuzzle.SetActive(true);
+            }
         }
     }
 }
