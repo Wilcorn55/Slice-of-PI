@@ -10,6 +10,7 @@ public class LootContainerInteract : Interactable
     [SerializeField] GameObject PaperPuzzle;
     [SerializeField] bool opened;
     [SerializeField] bool HasPuzzle;
+    public static bool GameIsPaused = false;
 
     //Interact will open a chest or loot container
     public override void Interact(Character character)
@@ -20,9 +21,22 @@ public class LootContainerInteract : Interactable
             closedChest.SetActive(false);
             openedChest.SetActive(true);
 
-            if(HasPuzzle == true)
+            
+        }
+
+        if (HasPuzzle == true)
+        {
+            if (GameIsPaused)
+            {
+                PaperPuzzle.SetActive(false);
+                Time.timeScale = 1f;
+                GameIsPaused = false;
+            }
+            else
             {
                 PaperPuzzle.SetActive(true);
+                Time.timeScale = 1f;
+                GameIsPaused = true;
             }
         }
     }
