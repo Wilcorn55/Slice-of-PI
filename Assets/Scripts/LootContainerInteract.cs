@@ -8,6 +8,7 @@ public class LootContainerInteract : Interactable
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
     [SerializeField] bool opened;
+    
 
     //Interact will open a chest or loot container
     public override void Interact(Character character)

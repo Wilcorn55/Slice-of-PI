@@ -29,6 +29,9 @@ public class DialogueSystem : MonoBehaviour
             PushText();
         }
         TypeOutText();
+
+       
+        
     }
     
     //Type out text slowly types the text rather then doing it all at once

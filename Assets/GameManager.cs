@@ -19,9 +19,11 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(player);
         } else
         {
             Destroy(gameObject);
+            Destroy(player);
         }
         
     }
@@ -32,6 +34,7 @@ public class GameManager : MonoBehaviour
         if(players.Length > 0)
         {
             currentPlayer = players[0];
+            
         }
     }
 
@@ -40,5 +43,7 @@ public class GameManager : MonoBehaviour
     {
         currentPlayer = players;
     }
+
+
    
 }

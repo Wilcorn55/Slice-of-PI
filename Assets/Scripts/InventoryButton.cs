@@ -33,6 +33,9 @@ public class InventoryButton : MonoBehaviour
         {
             text.gameObject.SetActive(false);
         }
+
+        
+        
     }
 
     //Clean will display an empty inventory 
