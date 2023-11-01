@@ -8,9 +8,12 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public DialogueSystem dialogueSystem;
     public ItemContainer inventorycontainer;
-    public GameObject player;
     public Player[] players;
     public Player currentPlayer;
+
+    public Transform canvas;
+    public GameObject itemInfoPrefab;
+    private GameObject currentItemInfo = null;
 
     //Awake will initialize the player in the scene
     private void Awake()
@@ -19,11 +22,11 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            DontDestroyOnLoad(player);
+            
         } else
         {
             Destroy(gameObject);
-            Destroy(player);
+            
         }
         
     }
@@ -42,6 +45,25 @@ public class GameManager : MonoBehaviour
     public void SetPlayer(Player players)
     {
         currentPlayer = players;
+    }
+
+    public void DisplayItemInfo(string itemName, string itemDescription, Vector2 buttonPos) 
+    {
+        if(currentItemInfo != null) 
+        {
+            Destroy(currentItemInfo.gameObject);
+        }
+
+        currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
+        currentItemInfo.GetComponent<ItemInfo>().SetUp(itemName, itemDescription);
+    }
+
+    public void DestroyItemInfo()
+    {
+        if(currentItemInfo != null) 
+        {
+            Destroy(currentItemInfo.gameObject);
+        }
     }
 
 

@@ -10,8 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d782df118d36542b12b5ea047cf58f, type: 3}
-  m_Name: Note
+  m_Name: Note from the Mayor
   m_EditorClassIdentifier: 
-  Name: Note
+  Name: Note from the Mayor
   stackable: 0
   icon: {fileID: 21300000, guid: 615ecf391b0ba0b40a9c3882ac5e6afc, type: 3}
+  Description:
+  - 'Hey '
+  - Welcome to our town you may find chests around town with clues in it.
+  - Some may help you and some may be red herrings.

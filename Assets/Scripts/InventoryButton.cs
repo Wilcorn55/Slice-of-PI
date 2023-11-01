@@ -9,6 +9,7 @@ public class InventoryButton : MonoBehaviour
     //Variables
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
+    private Item item;
 
     int myIndex;
 
@@ -45,5 +46,16 @@ public class InventoryButton : MonoBehaviour
         icon.gameObject.SetActive(false);
 
         text.gameObject.SetActive(false);
+    }
+
+    public void OnCursorEnter()
+    {
+        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription(), transform.position);
+    }
+
+
+    public void OnCursorExit()
+    {
+
     }
 }

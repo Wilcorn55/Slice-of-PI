@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,7 @@ public class PickUpItems : MonoBehaviour
 
     private void Awake()
     {
-        player = GameManager.instance.player.transform;
+        //player = GameManager.instance.player.transform;
     }
 
     private void Update()
@@ -31,4 +31,4 @@ public class PickUpItems : MonoBehaviour
         }
     }
 
-}
+}*/

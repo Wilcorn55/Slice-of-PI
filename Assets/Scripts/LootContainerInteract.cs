@@ -8,7 +8,9 @@ public class LootContainerInteract : Interactable
     [SerializeField] GameObject closedChest;
     [SerializeField] GameObject openedChest;
     [SerializeField] bool opened;
-    
+
+    public Item item;
+    public int count = 1;
 
     //Interact will open a chest or loot container
     public override void Interact(Character character)
@@ -18,7 +20,14 @@ public class LootContainerInteract : Interactable
             opened = true;
             closedChest.SetActive(false);
             openedChest.SetActive(true);
-            
+
+            if(GameManager.instance.inventorycontainer != null) 
+            {
+                GameManager.instance.inventorycontainer.Add(item, count);
+            }
+            else {
+                Debug.LogWarning("No Inventory Space"); 
+                    }
         }
     }
 }
