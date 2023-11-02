@@ -13,7 +13,7 @@ public class PuzzlePieces : MonoBehaviour
     void Start()
     {
         RightPosition = transform.position;
-        transform.position = new Vector3(Random.Range(-50f, 450f), Random.Range(200f, -200f));
+        transform.position = new Vector3(Random.Range(150f, 450f), Random.Range(150f, -90f));
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class PuzzlePieces : MonoBehaviour
     {
         if(Vector3.Distance(transform.position, RightPosition) < 0.5f)
         {
-            if (Selected)
+            if (!Selected)
             {
                 transform.position = RightPosition;
                 InRightPosition = true;
