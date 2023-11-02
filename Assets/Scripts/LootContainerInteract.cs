@@ -20,8 +20,6 @@ public class LootContainerInteract : Interactable
             opened = true;
             closedChest.SetActive(false);
             openedChest.SetActive(true);
-
-            
         }
 
         if (HasPuzzle == true)
