@@ -48790,16 +48790,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1177272032}
     m_Modifications:
-    - target: {fileID: 2554275442305731753, guid: d3b146cc77e70844db5b61356da5380d,
-        type: 3}
-      propertyPath: HasPuzzle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2554275442305731753, guid: d3b146cc77e70844db5b61356da5380d,
-        type: 3}
-      propertyPath: PaperPuzzle
-      value: 
-      objectReference: {fileID: 1657657938}
     - target: {fileID: 4116502957042646016, guid: d3b146cc77e70844db5b61356da5380d,
         type: 3}
       propertyPath: m_RootOrder
@@ -71026,7 +71016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2a092a2fd52614f82b2463b5871401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectedPiece: {fileID: 1117066424}
+  SelectedPiece: {fileID: 0}
 --- !u!4 &1460551634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8848819282490232040, guid: 1dc4948f20ddc324f84c815af63aa6a9,
