@@ -1,52 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PuzzlePieceMovement : MonoBehaviour
+public class PuzzlePieceMovement : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     //Variables
-    private Vector3 mOffset = new Vector3(0.0f, 0.0f, 0.0f);
+    private RectTransform rectTransform;
+    private Image image;
 
-    // Start is called before the first frame update
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        image.color = new Color(255, 255, 255, 100);
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        //rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.position = Input.mousePosition;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        image.color = new Color(255, 255, 255, 255);
+    }
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnMouseDown()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            return;
-        }
-
-        mOffset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f));
-    }
-
-    void OnMouseDrag()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            return;
-        }
-
-        Vector3 curScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0.0f);
-        Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + mOffset;
-        transform.position = curPosition;
-    }
-
-    void OnMouseUp()
-    {
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            return;
-        }
+        rectTransform = GetComponent<RectTransform>();
+        image = GetComponent<Image>();
     }
 }
