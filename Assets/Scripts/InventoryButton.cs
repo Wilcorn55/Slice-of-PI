@@ -10,6 +10,7 @@ public class InventoryButton : MonoBehaviour
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
     private Item item;
+   
 
     int myIndex;
 
@@ -22,6 +23,7 @@ public class InventoryButton : MonoBehaviour
     //Set will display the sprite and amount in the inventory 
     public void Set(ItemSlot slot)
     {
+        //item = newitem;
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
 
@@ -56,6 +58,6 @@ public class InventoryButton : MonoBehaviour
 
     public void OnCursorExit()
     {
-
+        GameManager.instance.DestroyItemInfo();
     }
 }

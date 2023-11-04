@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d782df118d36542b12b5ea047cf58f, type: 3}
-  m_Name: Key
+  m_Name: Beer
   m_EditorClassIdentifier: 
-  Name: Key
+  Name: Beer
   stackable: 0
-  icon: {fileID: 21300000, guid: e30e7f1121c83ed469e6242c11d18e05, type: 3}
+  icon: {fileID: 21300000, guid: d0c05b9125ed56349a5385e1a77547b7, type: 3}
+  Description: a Beer

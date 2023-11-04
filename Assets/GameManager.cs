@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public GameObject itemInfoPrefab;
     private GameObject currentItemInfo = null;
 
+    public float moveX = 0f;
+    public float moveY = 0f;
+
     //Awake will initialize the player in the scene
     private void Awake()
     {
@@ -53,6 +56,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(currentItemInfo.gameObject);
         }
+
+        buttonPos.x += moveX;
+        buttonPos.y += moveY;
+
 
         currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
         currentItemInfo.GetComponent<ItemInfo>().SetUp(itemName, itemDescription);
