@@ -2,7 +2,7 @@
 
 === main ===
 
-Hi im Jonothan, How are you?
+Hi im Jonothan, How are you? #name : Jonothan #portrait:Man_2_Portrait
 
     +[Im Good]
     -> chosen("Good")

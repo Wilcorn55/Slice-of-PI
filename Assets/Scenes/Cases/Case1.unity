@@ -53698,8 +53698,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1844440349}
   dialogueText: {fileID: 975269683}
-  nameText: {fileID: 0}
-  portrait: {fileID: 0}
+  nameText: {fileID: 245922897}
+  portrait: {fileID: 1017569421}
   choices:
   - {fileID: 324101446}
   - {fileID: 2067387585}

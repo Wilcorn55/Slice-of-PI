@@ -29,6 +29,10 @@ public class DialogueManager : MonoBehaviour
 
     private static DialogueManager instance;
 
+    private const string NAME = "name";
+
+    private const string PORTRAIT = "portrait";
+
     private void Awake()
     {
         if (instance != null)
@@ -51,7 +55,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(1)) 
+        if (Input.GetMouseButtonDown(0)) 
         {
             ContinueStory();
         }
@@ -97,11 +101,45 @@ public class DialogueManager : MonoBehaviour
 
             DisplayChoices();
 
+            HandleTags(currentStory.currentTags);
+
         }
         else
         {
             ExitDialogueMode();
         }
+    }
+
+    private void HandleTags(List<string> currentTags) 
+    {
+        //Loop through Tags
+        foreach(string tag in currentTags) 
+        {
+            string[] splitTag = tag.Split(':');
+            if (splitTag.Length != 2) 
+            {
+                Debug.LogError("Tag not appropriatee" + tag);
+            }
+            string tagKey = splitTag[0].Trim();
+            string tagValue = splitTag[1].Trim();
+
+            switch (tagKey) 
+            {
+                case NAME:
+                    nameText.text = tagValue;
+                    break;
+                case PORTRAIT:
+                    portrait.sprite = tagValue;
+                    break;
+                default:
+                    Debug.LogWarning("Tag came in but is not being handeled" + tag);
+                    break;
+             
+            }
+
+        }
+
+
     }
 
     private void DisplayChoices() 
@@ -133,7 +171,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator SelectFirstChoice() 
     {
-        //wait a frame before we set teh current selected object
+        //wait a frame before we set the current selected object
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
