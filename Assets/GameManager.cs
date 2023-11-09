@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     //Variables
     public static GameManager instance;
-    public DialogueSystem dialogueSystem;
+    //public DialogueSystem dialogueSystem;
     public ItemContainer inventorycontainer;
     public Player[] players;
     public Player currentPlayer;
