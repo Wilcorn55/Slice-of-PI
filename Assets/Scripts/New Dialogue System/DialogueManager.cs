@@ -8,6 +8,9 @@ using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Parameters")]
+    [SerializeField] private float typingSpeed = 0.04f;
+
     [Header("Dialogue UI")]
 
     [SerializeField]
@@ -25,13 +28,18 @@ public class DialogueManager : MonoBehaviour
 
     private Story currentStory;
 
+    private bool canSkip = false;
+    private bool submitSkip;
+
     public bool dialogueIsPlaying { get; private set; }
 
     private static DialogueManager instance;
 
+    private Coroutine displayLineCouroutine;
+
     private const string NAME = "name";
 
-    private const string PORTRAIT = "portrait";
+    public TalkInteract talkInteract;
 
     private void Awake()
     {
@@ -50,14 +58,19 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        {
+            submitSkip = true;
+        }
         if (!dialogueIsPlaying) 
         {
             return;
         }
 
-        if (Input.GetMouseButtonDown(0)) 
+        if (currentStory.currentChoices.Count == 0 && Input.GetMouseButtonDown(0)) 
         {
             ContinueStory();
+            
         }
     }
 
@@ -67,21 +80,26 @@ public class DialogueManager : MonoBehaviour
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
 
+
+        //get all the choices text
         choicesText = new TextMeshProUGUI[choices.Length];
         int index = 0;
         foreach (GameObject choice in choices) 
         {
             choicesText[index] = choice.GetComponentInChildren <TextMeshProUGUI>();
             index++;
+            
         }
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON) 
+    public void EnterDialogueMode(TextAsset inkJSON, Actor actor) 
     {
+        portrait.sprite = actor.portrait;
+
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-
+        
         ContinueStory();
        
     }
@@ -97,15 +115,19 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
-            dialogueText.text = currentStory.Continue();
+            if (displayLineCouroutine != null) 
+            {
+                StopCoroutine(displayLineCouroutine);
+            }
+            displayLineCouroutine = StartCoroutine(DisplayLine(currentStory.Continue()));
 
             DisplayChoices();
-
             HandleTags(currentStory.currentTags);
-
+            
         }
         else
         {
+            
             ExitDialogueMode();
         }
     }
@@ -127,9 +149,6 @@ public class DialogueManager : MonoBehaviour
             {
                 case NAME:
                     nameText.text = tagValue;
-                    break;
-                case PORTRAIT:
-                    portrait.sprite = tagValue;
                     break;
                 default:
                     Debug.LogWarning("Tag came in but is not being handeled" + tag);
@@ -159,6 +178,7 @@ public class DialogueManager : MonoBehaviour
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;
+            
         }
 
         for (int i = index; i < choices.Length; i++) 
@@ -175,11 +195,47 @@ public class DialogueManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
         EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        
     }
 
     public void MakeChoice(int choiceIndex) 
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+        ContinueStory();
     }
     
+
+    private IEnumerator DisplayLine(string line) 
+    {
+        dialogueText.text = "";
+
+        submitSkip = false;
+
+        StartCoroutine(CanSkip());
+     
+
+        foreach (char letter in line.ToCharArray()) 
+        {
+            //if player has pressed button skip dialogue
+            if (canSkip && submitSkip) 
+            {
+                submitSkip = false;
+                dialogueText.text = line;
+                break;
+            }
+
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+        canSkip = false;
+    }
+
+    private IEnumerator CanSkip() 
+    {
+        canSkip = false;
+        yield return new WaitForSeconds(0.5f);
+        canSkip = true;
+    }
+
+
 }

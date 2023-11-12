@@ -10899,7 +10899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -11026,6 +11026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &324537052
 BoxCollider2D:
@@ -37804,6 +37805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &525434297
 BoxCollider2D:
@@ -38974,7 +38976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -42315,6 +42317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &688560555
 BoxCollider2D:
@@ -48470,6 +48473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &903955483
 BoxCollider2D:
@@ -53696,6 +53700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4309a1db5d5795b438d5a8e78e3fd97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typingSpeed: 0.04
   dialoguePanel: {fileID: 1844440349}
   dialogueText: {fileID: 975269683}
   nameText: {fileID: 245922897}
@@ -53704,6 +53709,7 @@ MonoBehaviour:
   - {fileID: 324101446}
   - {fileID: 2067387585}
   - {fileID: 572620535}
+  talkInteract: {fileID: 0}
 --- !u!4 &1080585817
 Transform:
   m_ObjectHideFlags: 0
@@ -54556,6 +54562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &1116274540
 BoxCollider2D:
@@ -56261,6 +56268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &1169434062
 BoxCollider2D:
@@ -69736,6 +69744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 0}
   inkJSON: {fileID: 0}
 --- !u!61 &1360809622
 BoxCollider2D:
@@ -83159,6 +83168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b59fc28ab4a3440ba10b7261ee99f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 11400000, guid: a30156e377333224dac76ce3952e479d, type: 2}
   inkJSON: {fileID: 4900000, guid: 20e0721dcd77c124fb1f53a1fad48b4a, type: 3}
 --- !u!61 &1851918022
 BoxCollider2D:
@@ -87905,7 +87915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
