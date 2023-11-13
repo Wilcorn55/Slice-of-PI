@@ -9,6 +9,10 @@ public class InventoryButton : MonoBehaviour
     //Variables
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] TextMeshProUGUI itemName;
+    [SerializeField] TextMeshProUGUI itemDescription;
+
+   
 
     int myIndex;
 
@@ -21,8 +25,14 @@ public class InventoryButton : MonoBehaviour
     //Set will display the sprite and amount in the inventory 
     public void Set(ItemSlot slot)
     {
+        //item = newitem;
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
+
+
+        itemName.text = slot.item.name;
+        itemDescription.text = slot.item.name;
+
 
         if (slot.item.stackable == true)
         {
@@ -33,6 +43,9 @@ public class InventoryButton : MonoBehaviour
         {
             text.gameObject.SetActive(false);
         }
+
+        
+        
     }
 
     //Clean will display an empty inventory 
@@ -43,4 +56,15 @@ public class InventoryButton : MonoBehaviour
 
         text.gameObject.SetActive(false);
     }
+
+    /*public void OnCursorEnter()
+    {
+        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription());
+    }
+
+
+    public void OnCursorExit()
+    {
+        GameManager.instance.DestroyItemInfo();
+    }*/
 }

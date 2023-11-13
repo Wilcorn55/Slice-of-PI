@@ -23,9 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        /*codePanel.SetActive(false);
-        closedSafe.SetActive(true);
-        openedSafe.SetActive(false);*/
+
     }
 
 
@@ -33,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
     //Update will continuously update the players movement
     void Update()
     {
+        if (DialogueManager.GetInstance().dialogueIsPlaying) 
+        {
+            return;
+        }
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
@@ -46,13 +49,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", vertical);
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-        /*if (isSafeOpened) {
 
-            codePanel.SetActive(false);
-            closedSafe.SetActive(false);
-            openedSafe.SetActive(true);
-
-        }*/
 
         if (horizontal != 0 || vertical != 0) 
         {
@@ -71,27 +68,6 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime) ;
     }
 
-    /*
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.name.Equals ("Safe") && !isSafeOpened)
-        {
-            codePanel.SetActive(true);
-            Debug.Log("Working enter");
-        }
-    }
-    }
 
-    void OnTriggerExit2D(Collider2D col)
-    {
-        if (col.gameObject.name.Equals("Safe"))
-        {
-            codePanel.SetActive(false);
-            Debug.Log("Working exit");
-        }
-
-
-    }
-    */
 
 }

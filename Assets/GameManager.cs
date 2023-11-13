@@ -6,11 +6,13 @@ public class GameManager : MonoBehaviour
 {
     //Variables
     public static GameManager instance;
-    public DialogueSystem dialogueSystem;
     public ItemContainer inventorycontainer;
-    public GameObject player;
     public Player[] players;
     public Player currentPlayer;
+
+    public Transform canvas;
+    public GameObject itemInfoPrefab;
+
 
     //Awake will initialize the player in the scene
     private void Awake()
@@ -19,9 +21,11 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            
         } else
         {
             Destroy(gameObject);
+            
         }
         
     }
@@ -32,6 +36,7 @@ public class GameManager : MonoBehaviour
         if(players.Length > 0)
         {
             currentPlayer = players[0];
+            
         }
     }
 
@@ -40,5 +45,7 @@ public class GameManager : MonoBehaviour
     {
         currentPlayer = players;
     }
+
+    
    
 }

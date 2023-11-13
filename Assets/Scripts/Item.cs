@@ -10,4 +10,15 @@ public class Item : ScriptableObject
     public string Name;
     public bool stackable;
     public Sprite icon;
+
+    [TextArea]
+    [SerializeField]
+    public string Description;
+
+    public virtual string GetItemDescription() 
+    {
+        return Description;
+    }
 }
+
+

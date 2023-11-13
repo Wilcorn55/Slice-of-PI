@@ -12,6 +12,9 @@ public class LootContainerInteract : Interactable
     [SerializeField] bool hasPuzzle;
     public static bool GameIsPaused = false;
 
+    public Item item;
+    public int count = 1;
+
     //Interact will open a chest or loot container
     public override void Interact(Character character)
     {
@@ -29,6 +32,14 @@ public class LootContainerInteract : Interactable
         else
         {
             puzzle.SetActive(false);
+
+            if(GameManager.instance.inventorycontainer != null) 
+            {
+                GameManager.instance.inventorycontainer.Add(item, count);
+            }
+            else {
+                Debug.LogWarning("No Inventory Space"); 
+                    }
         }
     }
 }

@@ -9,6 +9,12 @@ public class ItemSlot
     //Variables
     public Item item;
     public int count;
+
+    public void Clear() 
+    {
+        item = null;
+        count = 0;
+    }
 }
 
 
@@ -49,4 +55,7 @@ public class ItemContainer : ScriptableObject
         }
 
     }
+
+
+
 }
