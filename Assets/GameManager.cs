@@ -6,17 +6,13 @@ public class GameManager : MonoBehaviour
 {
     //Variables
     public static GameManager instance;
-    //public DialogueSystem dialogueSystem;
     public ItemContainer inventorycontainer;
     public Player[] players;
     public Player currentPlayer;
 
     public Transform canvas;
     public GameObject itemInfoPrefab;
-    private GameObject currentItemInfo = null;
 
-    public float moveX = 0f;
-    public float moveY = 0f;
 
     //Awake will initialize the player in the scene
     private void Awake()
@@ -50,29 +46,6 @@ public class GameManager : MonoBehaviour
         currentPlayer = players;
     }
 
-    public void DisplayItemInfo(string itemName, string itemDescription, Vector2 buttonPos) 
-    {
-        if(currentItemInfo != null) 
-        {
-            Destroy(currentItemInfo.gameObject);
-        }
-
-        buttonPos.x += moveX;
-        buttonPos.y += moveY;
-
-
-        currentItemInfo = Instantiate(itemInfoPrefab, buttonPos, Quaternion.identity, canvas);
-        currentItemInfo.GetComponent<ItemInfo>().SetUp(itemName, itemDescription);
-    }
-
-    public void DestroyItemInfo()
-    {
-        if(currentItemInfo != null) 
-        {
-            Destroy(currentItemInfo.gameObject);
-        }
-    }
-
-
+    
    
 }

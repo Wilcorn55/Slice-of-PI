@@ -9,7 +9,9 @@ public class InventoryButton : MonoBehaviour
     //Variables
     [SerializeField] Image icon;
     [SerializeField] TextMeshProUGUI text;
-    private Item item;
+    [SerializeField] TextMeshProUGUI itemName;
+    [SerializeField] TextMeshProUGUI itemDescription;
+
    
 
     int myIndex;
@@ -26,6 +28,11 @@ public class InventoryButton : MonoBehaviour
         //item = newitem;
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
+
+
+        itemName.text = slot.item.name;
+        itemDescription.text = slot.item.name;
+
 
         if (slot.item.stackable == true)
         {
@@ -50,14 +57,14 @@ public class InventoryButton : MonoBehaviour
         text.gameObject.SetActive(false);
     }
 
-    public void OnCursorEnter()
+    /*public void OnCursorEnter()
     {
-        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription(), transform.position);
+        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription());
     }
 
 
     public void OnCursorExit()
     {
         GameManager.instance.DestroyItemInfo();
-    }
+    }*/
 }

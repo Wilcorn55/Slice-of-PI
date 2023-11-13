@@ -23,7 +23,7 @@ public class InventoryPanel : MonoBehaviour
         Show();
     }
 
-    //Set index will set the inventory slow amounts
+    //Set index will set the inventory slot amounts
     private void SetIndex() 
     { 
         for(int i = 0; i < inventory.Slots.Count; i++) 
