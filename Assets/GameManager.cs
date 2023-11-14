@@ -10,10 +10,6 @@ public class GameManager : MonoBehaviour
     public Player[] players;
     public Player currentPlayer;
 
-    /*public Transform canvas;
-    public GameObject itemInfoPrefab;
-    private GameObject currentItemInfo = null;*/
-
 
     //Awake will initialize the player in the scene
     private void Awake()

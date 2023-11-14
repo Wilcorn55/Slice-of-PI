@@ -54,8 +54,9 @@ public class InventoryButton : MonoBehaviour
     {
         icon.sprite = null;
         icon.gameObject.SetActive(false);
-
         text.gameObject.SetActive(false);
+        itemName.gameObject.SetActive(false);
+        itemDescription.gameObject.SetActive(false);
     }
 
    public void OnCursorEnter()
