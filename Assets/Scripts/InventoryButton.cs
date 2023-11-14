@@ -12,6 +12,7 @@ public class InventoryButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI itemName;
     [SerializeField] TextMeshProUGUI itemDescription;
 
+    public Transform canvas;
    
 
     int myIndex;
@@ -31,7 +32,7 @@ public class InventoryButton : MonoBehaviour
 
 
         itemName.text = slot.item.name;
-        itemDescription.text = slot.item.name;
+        itemDescription.text = slot.item.Description;
 
 
         if (slot.item.stackable == true)
@@ -57,14 +58,18 @@ public class InventoryButton : MonoBehaviour
         text.gameObject.SetActive(false);
     }
 
-   /* public void OnCursorEnter()
+   public void OnCursorEnter()
     {
-        GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription());
+        itemName.gameObject.SetActive(true);
+        itemDescription.gameObject.SetActive(true);
+        canvas.gameObject.SetActive(true);
     }
 
 
     public void OnCursorExit()
     {
-        GameManager.instance.DestroyItemInfo();
-    }*/
+        itemName.gameObject.SetActive(false);
+        itemDescription.gameObject.SetActive(false);
+        canvas.gameObject.SetActive(false);
+    }
 }
