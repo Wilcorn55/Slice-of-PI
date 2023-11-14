@@ -57,7 +57,7 @@ public class InventoryButton : MonoBehaviour
         text.gameObject.SetActive(false);
     }
 
-    /*public void OnCursorEnter()
+   /* public void OnCursorEnter()
     {
         GameManager.instance.DisplayItemInfo(item.name, item.GetItemDescription());
     }
