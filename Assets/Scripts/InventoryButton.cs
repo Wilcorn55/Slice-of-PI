@@ -13,7 +13,8 @@ public class InventoryButton : MonoBehaviour
     [SerializeField] TextMeshProUGUI itemDescription;
 
     public Transform canvas;
-   
+
+    private ItemSlot associatedItem;
 
     int myIndex;
 
@@ -26,7 +27,8 @@ public class InventoryButton : MonoBehaviour
     //Set will display the sprite and amount in the inventory 
     public void Set(ItemSlot slot)
     {
-        //item = newitem;
+        associatedItem = slot;
+
         icon.gameObject.SetActive(true);
         icon.sprite = slot.item.icon;
 
@@ -52,6 +54,7 @@ public class InventoryButton : MonoBehaviour
     //Clean will display an empty inventory 
     public void Clean() 
     {
+        associatedItem = null;
         icon.sprite = null;
         icon.gameObject.SetActive(false);
         text.gameObject.SetActive(false);
@@ -61,9 +64,15 @@ public class InventoryButton : MonoBehaviour
 
    public void OnCursorEnter()
     {
-        itemName.gameObject.SetActive(true);
-        itemDescription.gameObject.SetActive(true);
-        canvas.gameObject.SetActive(true);
+        if (associatedItem != null && associatedItem.item != null)
+        {
+            itemName.text = associatedItem.item.name;
+            itemDescription.text = associatedItem.item.Description;
+
+            itemName.gameObject.SetActive(true);
+            itemDescription.gameObject.SetActive(true);
+            canvas.gameObject.SetActive(true);
+        }
     }
 
 

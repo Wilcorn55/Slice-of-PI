@@ -38,13 +38,21 @@ public class InventoryPanel : MonoBehaviour
     {
         for(int i = 0; i < inventory.Slots.Count; i++) 
         {
-            if(inventory.Slots[i].item == null) 
+            if(buttons[i] != null && inventory.Slots[i] != null) 
             {
-                buttons[i].Clean();
+                if (inventory.Slots[i].item == null)
+                {
+                    buttons[i].Clean();
+                }
+                else
+                {
+                    buttons[i].Set(inventory.Slots[i]);
+                }
             }
             else 
             {
-                buttons[i].Set(inventory.Slots[i]);
+                buttons[i].Clean();
+                Debug.LogWarning("Button index exceeds number of inventory slots");
             }
         }
     }
