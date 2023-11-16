@@ -2,21 +2,27 @@
 
 === main ===
 
-Hi im Jonothan #name : Jonothan
+Hiya you must be the Detective, Hi i'm Jonathan. #Name: Jonothan
 
-How are you?
+   +[Nice to meet you, What do you know about the Murder?]
+   ->reply
+   +[Nice to meet you, Have a good day]
+   ->Finish
 
+=== reply === 
+My wife Sally, is best friends with Peter's wife.
 
+   +[Do you know anything about his death?]
+   ->reply1
 
-    +[Im Good]
-    -> chosen("Good")
-   
-   +[Im Bad]
-   -> chosen("No good")
-   
-   +[Im ok]
-   -> chosen("ok i guess we all have those days")
-   
-=== chosen(choice) ===
-Well thats {choice}!
+=== reply1 === 
+
+I kinda knew him, we got along but we weren't great friends.
+
+Try talking to Sally. She may know more than I do
+->Finish
+
+=== Finish === 
+Bye
 ->END
+   
