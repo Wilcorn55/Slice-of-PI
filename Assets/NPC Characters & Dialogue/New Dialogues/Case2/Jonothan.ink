@@ -25,7 +25,7 @@ Welcome back. How long has it been? 2, 3 years?
 {choice}
 
     +[Ah yes, I shall do that. Where were you at the time of the murder Jonothan?]
-    -> alibi ("Since the coroner said he was killed early in the morning, I would have been at home working in my office.")
+    -> alibi ("Since the coroner said he was killed early in the morning, I would have been at home working in my office. Velma was staying at my place at that time too so she'll be able to confirm that for you.")
     
 === alibi(choice) === 
 {choice}

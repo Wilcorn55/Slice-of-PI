@@ -31,10 +31,22 @@ I'm Paul, I'm new around here.
 {choice}
 
     +[I shall keep that in mind, anything else you can think of?]
-    -> final ("Nope, but I am looking forward to telling you I told you so when you find Darryl guity. Bye Detective")
+    -> more ("Nope, but I am looking forward to telling you I told you so when you find Darryl guity.")
+    
+=== more(choice) ===
+{choice}
+
+    +[And before I go, where were you when Aaron was killed?]
+    -> alibi ("I was sleeping. Although it happened close to me, I'm a very heavy sleeper. I wouldn't have woken up to anything.")
+
+=== alibi(choice) ===
+{choice}
+
+    +[Thank you for the information.]
+    -> final ("Anytime Detective!")
     
 === final(choice) ===
 {choice}
-
+    
 
 ->END

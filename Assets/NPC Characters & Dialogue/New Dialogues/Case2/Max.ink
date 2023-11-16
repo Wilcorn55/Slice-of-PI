@@ -22,7 +22,7 @@ How's it going?
     -> information ("Ouch, you hurt my ego.")
     
 === information(choice) ===
-{choice} Unfortunately, I don't have any information to help you this time. 
+{choice} Unfortunately, I don't have any information to help you this time. I was asleep like the rest of the town at that time. 
 
     +[Think hard, something might come to mind]
     -> final ("I've got nothing Detective. Good luck")

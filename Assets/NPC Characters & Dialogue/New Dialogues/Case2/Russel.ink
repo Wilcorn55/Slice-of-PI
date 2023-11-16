@@ -7,7 +7,7 @@ Hey, I'm Russel #name : Russel
 So you want to know about Aarons death?
 
     +[I do, what do you know?]
-    -> information ("All I know is that Darryl and I were working in the bakery from early that morning so it wasn't either of us. There's camera footage of us arriveing and leaving the bakery.")
+    -> information ("All I know is that Darryl and I were working in the bakery from early that morning so it wasn't either of us. There's camera footage of us arriving and leaving the bakery.")
     
 === information(choice) ===
 {choice}

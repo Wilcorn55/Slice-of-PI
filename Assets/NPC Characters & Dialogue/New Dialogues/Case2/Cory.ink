@@ -44,15 +44,15 @@ Hey man, what's up? I'm Cory #name : Cory
 {choice}
 
     +[Anything else you want to add?]
-    -> final ("I don't think there is anything else. As for my alibi, like many others I was sleeping at that time. Good luck Detective, please find my brothers killer.")
+    -> alibi ("I don't think there is anything else. As for my alibi, like many others I was sleeping at that time. Good luck Detective, please find my brothers killer.")
     
-=== final(choice) === 
+=== alibi(choice) === 
 {choice}
     
     +[I will do everything in my power to find Aarons killer. I'm sorry for your loss Cory.]
-    -> thanks ("Thank you. Good bye.")
+    -> final ("Thank you. Good bye.")
     
-=== thanks(choice) ===
+=== final(choice) ===
 {choice}
 
 ->END

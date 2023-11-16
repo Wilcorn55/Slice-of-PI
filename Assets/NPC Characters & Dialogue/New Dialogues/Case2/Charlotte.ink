@@ -21,16 +21,22 @@ Well that's {choice}! Another very sad situation has happened, hasn't it?
 === response(choice) ===
 {choice}
     
-    +[Yes I am, please tell me what you know.]
-    -> alibi ("I don't know anything definitive but if I were you I would be looking into Cory. He's Aarons brother and from what Aaron told me they have been fighting quite a bit.")
+    +[I'm looking into everyone, please tell me what you know.]
+    -> information ("I don't know anything definitive but if I were you I would be looking into Cory. He's Aarons brother and from what Aaron told me they have been fighting quite a bit.")
 
-=== alibi(choice) ===
+=== information(choice) ===
 Oh {choice}
 
     +[Do you know what they had been fighting about?]
-    -> information ("Mostly about the inheritance from their parents. He didn't give me any details, just that.")
+    -> more ("Mostly about the inheritance from their parents. He didn't give me any details, just that.")
     
-===information(choice) ===
+=== more(choice) ===
+{choice}
+
+    +[Before I go, where were you at the time of the murder?]
+    -> alibi ("I was asleep at that time of morning. I don't get up before 9am because I enjoy sleeping in.")
+    
+=== alibi(choice) ===
 {choice}
 
     +[Well thank you for your time Charlotte and I'm sorry for your loss.]

@@ -13,7 +13,7 @@ Been an interesting couple of years since you were here last
 {choice}
 
     +[Yes, I've heard you are running for Mayor.]
-    -> alibi ("Before you ask Detective, I can tell you every morning I go to the bakery early to do the prep. You can even ask Russel as we work together. We were both there that morning.")
+    -> alibi ("Before you ask Detective, I can tell you every morning I go to the bakery early to do the morning prep. You can even ask Russel as we work together. We were both there that morning.")
     
 === alibi(choice) ===
 {choice}
