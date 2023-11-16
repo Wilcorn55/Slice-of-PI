@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d782df118d36542b12b5ea047cf58f, type: 3}
-  m_Name: Note from Blake
+  m_Name: Apple
   m_EditorClassIdentifier: 
-  Name: Note from Blake
-  stackable: 0
-  icon: {fileID: 21300000, guid: 615ecf391b0ba0b40a9c3882ac5e6afc, type: 3}
-  Description: Hi - Blake
+  Name: Apple
+  stackable: 1
+  icon: {fileID: 21300000, guid: da7129ed6a246f048a49d8d97de2d2d4, type: 3}
+  Description: 'an Apple
+
+'

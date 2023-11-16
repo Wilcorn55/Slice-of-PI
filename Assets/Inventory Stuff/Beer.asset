@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Beer
   m_EditorClassIdentifier: 
   Name: Beer
-  stackable: 0
+  stackable: 1
   icon: {fileID: 21300000, guid: d0c05b9125ed56349a5385e1a77547b7, type: 3}
   Description: a Beer

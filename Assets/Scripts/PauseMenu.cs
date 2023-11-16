@@ -9,6 +9,11 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
+    [SerializeField]
+    ItemContainer inventory;
+    [SerializeField]
+    List<InventoryButton> buttons;
+
     //Pause Menu 
 
     //Update is called once per frame
@@ -55,14 +60,23 @@ public class PauseMenu : MonoBehaviour
     //Play game one will load the case 1 scene
     public void PlayGameOne()
     {
+        for (int i = 0; i < inventory.Slots.Count; i++)
+        {
+            buttons[i].Clean();
+        }
         SceneManager.LoadScene("Case1");
-
+        
     }
 
     //Play game two will load the case 2 scene
     public void PlayGameTwo()
     {
+        for (int i = 0; i < inventory.Slots.Count; i++)
+        {
+            buttons[i].Clean();
+        }
         SceneManager.LoadScene("Case2");
+     
     }
 
     //Quit game will cause the game to close 

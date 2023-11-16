@@ -46950,7 +46950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842015263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -27.21, y: 29.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -52869,6 +52869,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1557096960}
+  inventory: {fileID: 11400000, guid: 24ff0e76b3f9d47489a21b3e34b32c80, type: 2}
+  buttons:
+  - {fileID: 542440580}
+  - {fileID: 1693120840}
+  - {fileID: 1009077366}
+  - {fileID: 2084616063}
+  - {fileID: 356406672}
+  - {fileID: 146108614}
+  - {fileID: 1005320237}
+  - {fileID: 848904809}
+  - {fileID: 700690963}
+  - {fileID: 1401890674}
+  - {fileID: 1102082711}
+  - {fileID: 1974677447}
+  - {fileID: 1881774638}
+  - {fileID: 2121954648}
+  - {fileID: 589632723}
+  - {fileID: 1452061379}
+  - {fileID: 1593129615}
+  - {fileID: 2074133055}
 --- !u!1 &1048837927
 GameObject:
   m_ObjectHideFlags: 0
@@ -69755,7 +69775,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335604453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.71, y: -7.76, z: 0}
+  m_LocalPosition: {x: 23.35, y: -1.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -69781,7 +69801,7 @@ MonoBehaviour:
   puzzle: {fileID: 1991239224}
   opened: 0
   hasPuzzle: 0
-  item: {fileID: 11400000, guid: ce9bf1d9f9d608d4097d6c43ceb9d784, type: 2}
+  item: {fileID: 11400000, guid: c55a968792d452c4f8f64996272192af, type: 2}
   count: 1
 --- !u!61 &1335604456
 BoxCollider2D:
@@ -78775,7 +78795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644057276}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.08, y: -7.76, z: 0}
+  m_LocalPosition: {x: -14.77, y: 5.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
