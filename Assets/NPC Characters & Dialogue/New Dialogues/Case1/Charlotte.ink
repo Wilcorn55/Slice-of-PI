@@ -2,14 +2,14 @@
 
 === main ===
 
-Oh Hi, You must be the Detective, thanks for coming. #Name: ???
+Oh Hi, You must be the Detective, thanks for coming. #name: ???
 
    +[Nice to meet you, whats your Name?]
    ->Greet
 
 === Greet === 
 
-I'm Charlotte, Peter's wife. Please find out who did this to my husband. #Name: Charlotte
+I'm Charlotte, Peter's wife. Please find out who did this to my husband. #name: Charlotte
 
    +[I'll do my Best]
    ->reply

@@ -1,7 +1,7 @@
 -> main 
 
 === main ===
-Hey how's it going you must be the detective, such a sad situation. Charlotte is just heartbroken. #Name: ???
+Hey how's it going you must be the detective, such a sad situation. Charlotte is just heartbroken. #name: ???
 
 
    +[It is, and whats your Name?]
@@ -11,7 +11,7 @@ Hey how's it going you must be the detective, such a sad situation. Charlotte is
 
 === reply === 
 
-Oh sorry I'm Sally, Charlotte and I have been best friends since we were kids. #Name: Charlotte
+Oh sorry I'm Sally, Charlotte and I have been best friends since we were kids. #name: Charlotte
 
 Waking up that morning to the news was just horrible. I raced over to comfort Charlotte as soon as I heard.
 

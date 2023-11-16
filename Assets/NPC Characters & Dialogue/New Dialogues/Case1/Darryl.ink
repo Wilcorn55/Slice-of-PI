@@ -2,7 +2,7 @@
 
 === main ===
 
-Hey I’m Darryl, I was good friends with Peter.  #Name: Darryl
+Hey I’m Darryl, I was good friends with Peter.  #name: Darryl
 
    +[Nice to meet you, What do you do?]
    ->reply

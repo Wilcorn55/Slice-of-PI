@@ -2,7 +2,7 @@
 
 === main ===
 
-Hiya you must be the Detective, Hi i'm Jonathan. #Name: Jonothan
+Hiya you must be the Detective, Hi i'm Jonathan. #name: Jonothan
 
    +[Nice to meet you, What do you know about the Murder?]
    ->reply

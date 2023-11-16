@@ -1,7 +1,7 @@
 -> main 
 
 === main ===
-Hey how you doing, my names Michael #Name: Michael
+Hey how you doing, my names Michael #name: Michael
 
    +[Nice to meet you, Do you know anything about the Murder?]
    ->reply

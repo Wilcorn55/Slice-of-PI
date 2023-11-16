@@ -2,9 +2,9 @@
 
 === main ===
 
-Welcome Detective, thank you for coming. Welcome to our small town of Elmwood. #Name: ???
+Welcome Detective, thank you for coming. Welcome to our small town of Elmwood. #name: ???
 
-I am Mayor Aaron. #Name: Mayor Aaron
+I am Mayor Aaron. #name: Mayor Aaron
 
    +[Hi, Nice to meet you]
    ->reply

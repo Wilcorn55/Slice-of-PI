@@ -1,4 +1,4 @@
-You must be the Detective the Mayors been talking about #Name: ???
+You must be the Detective the Mayors been talking about #name: ???
 
    +[Hi, Nice to meet you]
    ->reply
@@ -8,7 +8,7 @@ You must be the Detective the Mayors been talking about #Name: ???
 
 === reply === 
 
-Im Max and do i have some information for you. #Name: Max
+Im Max and do i have some information for you. #name: Max
 
    +[Ah yes what is that?]
    ->reply1
