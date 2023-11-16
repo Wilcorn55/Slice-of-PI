@@ -2,10 +2,10 @@
 
 === main ===
 
-Hey man, what's up? I'm Cory #name : Cory
+Hey man, what's up? I'm Cory. #name : Cory
 
     +[Hello Cory, Nice to meet you.]
-    -> reply ("Oh you're the Detective")
+    -> reply ("Oh you're the Detective!")
     
 === reply(choice) ===
 {choice}
@@ -17,10 +17,10 @@ Hey man, what's up? I'm Cory #name : Cory
 {choice}
 
     +[Yes I have.]
-    -> chosen ("I'm guessing you already know that I'm Aarons brother. Bet she also mentioned that we had been fighting recently too.")
+    -> chosen ("I'm guessing you already know that I'm Aaron's brother. Bet she also mentioned that we had been fighting recently too.")
     
     +[Not yet.]
-    -> chosen ("Well I'm Aarons brother.")
+    -> chosen ("Well I'm Aaron's brother.")
     
 === chosen(choice) ===
 {choice}
@@ -49,7 +49,7 @@ Hey man, what's up? I'm Cory #name : Cory
 === alibi(choice) === 
 {choice}
     
-    +[I will do everything in my power to find Aarons killer. I'm sorry for your loss Cory.]
+    +[I will do everything in my power to find Aaron's killer. I'm sorry for your loss Cory.]
     -> final ("Thank you. Good bye.")
     
 === final(choice) ===

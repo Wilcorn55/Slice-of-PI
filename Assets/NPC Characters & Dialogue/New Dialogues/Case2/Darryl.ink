@@ -2,9 +2,9 @@
 
 === main ===
 
-Welcome back Detective #name : Darryl
+Welcome back Detective. #name : Darryl
 
-Been an interesting couple of years since you were here last
+Been an interesting couple of years since you were here last...
 
     +[Hello Darryl, what's changed since I was here last?]
     -> update ("I've got a new bakery, and I'm also running for Mayor...")

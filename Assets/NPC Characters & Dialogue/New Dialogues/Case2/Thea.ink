@@ -2,7 +2,7 @@
 
 === main ===
 
-Hi again #name : Thea
+Hi again, #name : Thea
 
 I'm going to be honest, I hoped I would never have to see you again.
     

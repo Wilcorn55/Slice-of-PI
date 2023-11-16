@@ -6,15 +6,15 @@ Welcome Detective, thank you for coming. Welcome to our small town of Elmwood. #
 
 I am Mayor Aaron. #name: Mayor Aaron
 
-   +[Hi, Nice to meet you]
+   +[Hi, Nice to meet you.]
    ->reply
 
 === reply === 
 The reason we have called you here is that there has been a murder.
 
-The local baker Peter was found stabbed in the middle of his Bakery first thing in the morning about a week ago.
+Last week our local baker, Peter was found stabbed in his store first thing in the morning.
 
-Our town is so small so we don't have any police of our own which is why we asked you to come here.
+Our town is so small, we don't have any police of our own which is why we have asked you to come.
 
    +[Where is the crime scene?]
    ->crime
@@ -27,9 +27,11 @@ The crime scene has already been cleaned up and we were unable to find any clues
    ->start
 
 ===start===
-You know in small towns everyone knows everyone else's business.
+You know, in small towns everyone knows everyone business.
 
-So I think the best way for you to find out what happened is to walk around and talk to the villagers. ->DONE
+So I think the best way for you to find out what happened is to walk around and talk to the villagers. 
+
+->DONE
 
 
 

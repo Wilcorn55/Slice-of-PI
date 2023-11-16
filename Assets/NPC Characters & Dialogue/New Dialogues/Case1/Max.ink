@@ -1,30 +1,30 @@
-You must be the Detective the Mayors been talking about #name: ???
+You must be the Detective the Mayor has been talking about... #name: ???
 
-   +[Hi, Nice to meet you]
+   +[Hi, I am, nice to meet you.]
    ->reply
-   +[Goodbye]
+   +[Goodbye.]
    ->Finish
    
 
 === reply === 
 
-Im Max and do i have some information for you. #name: Max
+I'm Max and do I have some information for you! #name: Max
 
-   +[Ah yes what is that?]
+   +[oh? what is it?]
    ->reply1
 
 === reply1 === 
-Now you see, every morning I like to go for a walk around the town and I pass the bakery.
+Now you see, every morning I like to go for a walk around town.
 
-The morning of the Murder i passed the Bakery and I heard some arguing from inside.
+The morning of the murder I passed the bakery and I heard a man and a woman arguing  from inside.
 
-I didn't think much of it but what i did hear was a man and a woman arguing.
+I didn't think much of it but what I heard was,
 	
-The man said “I have a good life and my wife is your best friend, I'm sorry i can't be with you”
+The man saying “I have a good life! plus my wife is your best friend, I'm sorry I can't be with you!”.
 
-And the woman replied with “We can just go Jonothan and Charlotte will get over it”
+The woman replied with “We can leave this town! Jonothan and Charlotte will get over it!”.
 
-But that's all I heard. 
+That's all I heard. 
 
 ->Finish
 

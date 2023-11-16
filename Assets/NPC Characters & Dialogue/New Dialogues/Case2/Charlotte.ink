@@ -2,7 +2,7 @@
 
 === main ===
 
-Welcome back Detective, it's me Charlotte. #name : Charlotte
+Welcome back Detective, it's me, Charlotte. #name : Charlotte
 
 How have you been?
 
@@ -22,10 +22,10 @@ Well that's {choice}! Another very sad situation has happened, hasn't it?
 {choice}
     
     +[I'm looking into everyone, please tell me what you know.]
-    -> information ("I don't know anything definitive but if I were you I would be looking into Cory. He's Aarons brother and from what Aaron told me they have been fighting quite a bit.")
+    -> information ("I don't know anything definitive but if I were you I would be looking into Cory. He's Aaron's brother and from what Aaron told me they have been fighting quite a bit.")
 
 === information(choice) ===
-Oh {choice}
+Oh, {choice}
 
     +[Do you know what they had been fighting about?]
     -> more ("Mostly about the inheritance from their parents. He didn't give me any details, just that.")

@@ -4,7 +4,7 @@
 
 Hello Detective.  #name : Jonothan
 
-Welcome back. How long has it been? 2, 3 years?
+Welcome back. How long has it been? 2... 3 years?
 
     +[Not long enough Jonothan.]
     -> information ("Not the best circumstances for your return. Do you remember our Mayor Aaron? Well a few days ago he was found strangled in his bed. The lock on the back door was found smashed in.")

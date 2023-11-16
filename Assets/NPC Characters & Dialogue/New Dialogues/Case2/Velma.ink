@@ -4,7 +4,7 @@
 
 Hi, I'm Velma. #name : Velma
 
-I'm Jonothans girlfriend. You must be the Detective everyone has been talking about.
+I'm Jonothan's girlfriend. You must be the Detective everyone has been talking about.
 
     +[That's me. Nice to meet you Velma. Is there anything you can tell me about Aarons passing?]
     -> reply ("There isn't much I can tell you really. The only thing I can think of is that Jonothan and Aaron had been bickering back and forth for months whilst campaigning for Mayor.")
@@ -12,8 +12,8 @@ I'm Jonothans girlfriend. You must be the Detective everyone has been talking ab
 === reply(choice) ===
 {choice}
 
-    +[Where were you on the morning of Aarons death?]
-    -> alibi ("The morning of Aarons death, I was asleep, I did get woken up when Jonothan got out of bed earlier than usual. He usually gets up to get work done in his office but I'm not sure about that morning since I didn't hear the office door close, I did however hear the backdoor open.")
+    +[Where were you on the morning of Aaron's death?]
+    -> alibi ("The morning of Aaron's death, I was asleep, I did get woken up when Jonothan got out of bed earlier than usual. He usually gets up to get work done in his office but I'm not sure about that morning since I didn't hear the office door close, I did however hear the backdoor open.")
     
 === alibi(choice) ===
 {choice}

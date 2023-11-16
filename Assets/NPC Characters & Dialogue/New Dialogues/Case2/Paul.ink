@@ -7,7 +7,7 @@ What's up? #name : Paul
 I'm Paul, I'm new around here.
 
     +[Nice to meet you Paul]
-    -> reply ("Ah you're the Detective investigating the Mayors murder right?")
+    -> reply ("Ah you're the Detective investigating the Mayor's murder right?")
     
 === reply(choice) ===
 {choice}

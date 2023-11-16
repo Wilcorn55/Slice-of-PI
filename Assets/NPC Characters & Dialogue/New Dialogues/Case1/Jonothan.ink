@@ -2,11 +2,11 @@
 
 === main ===
 
-Hiya you must be the Detective, Hi i'm Jonathan. #name: Jonothan
+Hi there, you must be the Detective, Hi I'm Jonathan. #name: Jonothan
 
-   +[Nice to meet you, What do you know about the Murder?]
+   +[Nice to meet you, what do you know about the murder?]
    ->reply
-   +[Nice to meet you, Have a good day]
+   +[Nice to meet you, have a good day]
    ->Finish
 
 === reply === 
@@ -19,10 +19,10 @@ My wife Sally, is best friends with Peter's wife.
 
 I kinda knew him, we got along but we weren't great friends.
 
-Try talking to Sally. She may know more than I do
+Try talking to Sally. She may know more than I do.
 ->Finish
 
 === Finish === 
-Bye
+Bye.
 ->END
    

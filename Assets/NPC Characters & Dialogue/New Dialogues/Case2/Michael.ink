@@ -13,7 +13,7 @@ I'm assuming you're wanting to know where I was when Aaron was killed?
 {choice}
 
     +[Elaborate please.]
-    -> alibi ("I wont be able to provide an alibi or anything, everyone in my house is sound asleep when I go for my walks. That morning when I was out for my walk, I heard some some noises coming from Aarons house but I didn't see anything.")
+    -> alibi ("I wont be able to provide an alibi or anything, everyone in my house is sound asleep when I go for my walks. That morning when I was out for my walk, I heard some some noises coming from Aaron's house but I didn't see anything.")
     
 === alibi(choice) ===
 {choice}

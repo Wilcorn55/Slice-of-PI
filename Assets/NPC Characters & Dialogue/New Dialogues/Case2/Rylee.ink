@@ -6,16 +6,16 @@ Hi Sir, #name : Rylee
 
 How are you doing?
 
-    +[Very well thank you]
+    +[Very well thank you.]
     -> feeling ("good to hear.")
     
-    +[Doing alright at the moment]
+    +[Doing alright at the moment.]
     -> feeling ("hope it gets better for you.")
     
 === feeling(choice) ===
 Oh, {choice} I'm Rylee, Michael is my grandad.
 
-    +[Nice to meet you Rylee]
+    +[Nice to meet you Rylee.]
     -> question ("Are you going to arrest someone for the murder?")
     
 === question(choice) ===
