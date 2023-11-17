@@ -11,7 +11,7 @@ Hey, how's it going? you must be the Detective, such a sad situation. Charlotte 
 
 === reply === 
 
-Oh sorry I'm Sally, Charlotte and I have been best friends since we were kids. #name: Charlotte
+Oh sorry I'm Sally, Charlotte and I have been best friends since we were kids. #name: Sally
 
 Waking up that morning to the news was just horrible. I raced over to comfort Charlotte as soon as I heard.
 
