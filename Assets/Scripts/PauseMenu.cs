@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour
     //Update will check if the play triggers the pause menu with the esc button and will display the menu if the player has pressed esc
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (GameIsPaused)
             {
