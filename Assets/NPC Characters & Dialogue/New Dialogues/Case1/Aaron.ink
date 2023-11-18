@@ -27,7 +27,7 @@ The crime scene has already been cleaned up and we were unable to find any clues
    ->start
 
 ===start===
-You know, in small towns everyone knows everyone business.
+You know, in small towns everyone knows everyones business.
 
 So I think the best way for you to find out what happened is to walk around and talk to the villagers. 
 

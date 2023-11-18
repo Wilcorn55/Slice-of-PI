@@ -54,7 +54,8 @@ public class PauseMenu : MonoBehaviour
     //Main menu will take the player to the main menu
     public void MainMenu()
     {
-        SceneManager.LoadScene("MainMenu");   
+        SceneManager.LoadScene("MainMenu");
+        Resume();
     }
 
     //Play game one will load the case 1 scene
@@ -64,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         {
             buttons[i].Clean();
         }
+        Resume();
         SceneManager.LoadScene("Case1");
         
     }
@@ -75,6 +77,7 @@ public class PauseMenu : MonoBehaviour
         {
             buttons[i].Clean();
         }
+        Resume();
         SceneManager.LoadScene("Case2");
      
     }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-/*public class DialogueSystem : MonoBehaviour
+public class DialogueSystem : MonoBehaviour
 {
     //Variables
     [SerializeField] TextMeshProUGUI targetText;
@@ -115,4 +115,4 @@ using System;
         Debug.Log("The Dialogue has ended");
         Show(false);
     }
-}*/
+}
