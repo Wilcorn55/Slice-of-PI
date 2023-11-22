@@ -61,10 +61,6 @@ public class PauseMenu : MonoBehaviour
     //Play game one will load the case 1 scene
     public void PlayGameOne()
     {
-        for (int i = 0; i < inventory.Slots.Count; i++)
-        {
-            buttons[i].Clean();
-        }
         Resume();
         SceneManager.LoadScene("Case1");
         
@@ -73,10 +69,6 @@ public class PauseMenu : MonoBehaviour
     //Play game two will load the case 2 scene
     public void PlayGameTwo()
     {
-        for (int i = 0; i < inventory.Slots.Count; i++)
-        {
-            buttons[i].Clean();
-        }
         Resume();
         SceneManager.LoadScene("Case2");
      
